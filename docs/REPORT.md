@@ -3,6 +3,12 @@
 Checked against the master prompt's §10 acceptance checklist on 2026-10-21. Every claim below was run
 in this build, not only read in code; anything not verified says so. The repository has no commits yet.
 
+## Since this report (1.1.0, 2026-10-22)
+
+- **Several learners per machine (profiles).** Tested by `npm test` (108/108) and `tools/persona/smoke-profiles.mjs` (14/14).
+- **A Windows desktop app (Electron) with an installer and auto-update.** The packaged app was launched and checked.
+- **Public on GitHub:** https://github.com/jeremysaqr/kana-dojo.
+
 ## Where it stands
 
 - **Content:** 142 kana (hiragana and katakana, basic plus dakuten/handakuten) and 310 words, the word

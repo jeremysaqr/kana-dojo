@@ -1,4 +1,13 @@
-# Next session: all planned steps done (2026-10-21). See docs/REPORT.md for the final state and the known gaps (dog-eared 2026-10-20, updated after steps 1–2)
+# Next session: 1.1.0 shipped to GitHub (2026-10-22). See docs/REPORT.md for the state and known gaps
+
+> **1.1.0 (2026-10-22):**
+> - **Learners:** several learners per machine (`data/profiles/<id>/`, `data/profiles.json`, `/api/profiles`). The owner's progress is the "Jeremy" profile; the original is kept as `data/progress.json.pre-profiles`.
+> - **Desktop app:** Electron (`electron/main.js`; `npm run app`, `npm run dist`, `npm run release`) with NSIS installer and electron-updater from GitHub Releases. The installed app's data is in `%APPDATA%\Kana Dojo\data`.
+> - **Repo:** public at https://github.com/jeremysaqr/kana-dojo.
+>
+> **Not done yet:**
+> - no GitHub Release published, so installed copies have nothing to update to (`npm run release`, with `GH_TOKEN` from `gh auth token`);
+> - the installer is unsigned (SmartScreen warns once). (dog-eared 2026-10-20, updated after steps 1–2)
 
 Read `kana-trainer-master-prompt.md` (in `..\award video\`), `PRODUCT.md`, `.impeccable/surfaces/public-index-html.md`
 (direction contract), and the latest critique in `.impeccable/critique/` before starting.
