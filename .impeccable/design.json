@@ -1,0 +1,1468 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T03:33:21.033Z",
+  "title": "Design System: Kana Dojo",
+  "extensions": {
+    "colorMeta": {
+      "platform-concrete": {
+        "role": "neutral",
+        "displayName": "Platform Concrete",
+        "canonical": "#e8e8e2",
+        "cssVar": "--ground",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b08",
+          "#252521",
+          "#42423d",
+          "#62625c",
+          "#83837d",
+          "#a5a5a0",
+          "#c9c9c4",
+          "#efefe9"
+        ]
+      },
+      "enamel-white": {
+        "role": "neutral",
+        "displayName": "Enamel White",
+        "canonical": "#fafaf7",
+        "cssVar": "--panel",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ]
+      },
+      "enamel-shade": {
+        "role": "neutral",
+        "displayName": "Enamel Shade",
+        "canonical": "#f0f0ea",
+        "cssVar": "--panel-2",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b08",
+          "#252521",
+          "#42423e",
+          "#62625c",
+          "#83837d",
+          "#a5a5a0",
+          "#c9c9c4",
+          "#efefe9"
+        ]
+      },
+      "iron-ink": {
+        "role": "primary",
+        "displayName": "Iron Ink",
+        "canonical": "#16191d",
+        "cssVar": "--ink",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6266",
+          "#7f8388",
+          "#a1a5ab",
+          "#c5c9cf",
+          "#eaeff5"
+        ]
+      },
+      "signage-grey": {
+        "role": "neutral",
+        "displayName": "Signage Grey",
+        "canonical": "#474d53",
+        "cssVar": "--ink-2",
+        "theme": "light",
+        "tonalRamp": [
+          "#070c10",
+          "#20262b",
+          "#3d4349",
+          "#5c6268",
+          "#7d838a",
+          "#9fa6ad",
+          "#c3cad1",
+          "#e8eff7"
+        ]
+      },
+      "faded-grey": {
+        "role": "neutral",
+        "displayName": "Faded Grey",
+        "canonical": "#62686e",
+        "cssVar": "--ink-3",
+        "theme": "light",
+        "tonalRamp": [
+          "#070c10",
+          "#21262b",
+          "#3d4348",
+          "#5c6268",
+          "#7d8389",
+          "#9fa6ac",
+          "#c3cad1",
+          "#e8eff6"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#c4c5bf",
+        "cssVar": "--rule",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0c08",
+          "#252621",
+          "#42433e",
+          "#61625c",
+          "#82837d",
+          "#a5a6a0",
+          "#c9cac4",
+          "#eeefe9"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#8d9096",
+        "cssVar": "--rule-strong",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b0f",
+          "#23252a",
+          "#3f4247",
+          "#5e6167",
+          "#7f8288",
+          "#a2a5ab",
+          "#c6c9d0",
+          "#ebeef5"
+        ]
+      },
+      "top-bar": {
+        "role": "neutral",
+        "displayName": "Top Bar",
+        "canonical": "#16191d",
+        "cssVar": "--bar",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6266",
+          "#7f8388",
+          "#a1a5ab",
+          "#c5c9cf",
+          "#eaeff5"
+        ]
+      },
+      "top-bar-raised": {
+        "role": "neutral",
+        "displayName": "Top Bar Raised",
+        "canonical": "#23272c",
+        "cssVar": "--bar-2",
+        "theme": "light",
+        "tonalRamp": [
+          "#080b10",
+          "#21252a",
+          "#3e4248",
+          "#5d6267",
+          "#7e8389",
+          "#a0a6ac",
+          "#c4cad0",
+          "#eaeff6"
+        ]
+      },
+      "bar-ink": {
+        "role": "neutral",
+        "displayName": "Bar Ink",
+        "canonical": "#f3f3ef",
+        "cssVar": "--bar-ink",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a1",
+          "#c9c9c5",
+          "#efefeb"
+        ]
+      },
+      "bar-ink-muted": {
+        "role": "neutral",
+        "displayName": "Bar Ink Muted",
+        "canonical": "#b4b9be",
+        "cssVar": "--bar-ink-2",
+        "theme": "light",
+        "tonalRamp": [
+          "#080c0f",
+          "#222629",
+          "#3e4247",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6ab",
+          "#c5cacf",
+          "#eaeff4"
+        ]
+      },
+      "bar-rule": {
+        "role": "neutral",
+        "displayName": "Bar Rule",
+        "canonical": "#4a4f55",
+        "cssVar": "--bar-rule",
+        "theme": "light",
+        "tonalRamp": [
+          "#080b10",
+          "#21252b",
+          "#3e4248",
+          "#5d6268",
+          "#7d8389",
+          "#a0a6ac",
+          "#c4cad1",
+          "#e9eff6"
+        ]
+      },
+      "miss-red": {
+        "role": "tertiary",
+        "displayName": "Miss Red",
+        "canonical": "#b02a17",
+        "cssVar": "--miss",
+        "theme": "light",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0400",
+          "#7e0d00",
+          "#ae2815",
+          "#d64f3b",
+          "#ff745d",
+          "#ffb3a5",
+          "#ffe9e4"
+        ]
+      },
+      "miss-wash": {
+        "role": "tertiary",
+        "displayName": "Miss Wash",
+        "canonical": "#fbe8e3",
+        "cssVar": "--miss-bg",
+        "theme": "light",
+        "tonalRamp": [
+          "#130806",
+          "#2f211e",
+          "#4d3e3a",
+          "#6d5d59",
+          "#8f7e7a",
+          "#b2a19c",
+          "#d7c4c0",
+          "#fdeae5"
+        ]
+      },
+      "miss-on-bar": {
+        "role": "tertiary",
+        "displayName": "Miss On Bar",
+        "canonical": "#ff8a75",
+        "cssVar": "--miss-on-bar",
+        "theme": "light",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0400",
+          "#7e0e00",
+          "#a43827",
+          "#cb5b48",
+          "#f27f6a",
+          "#ffb3a5",
+          "#ffe9e4"
+        ]
+      },
+      "ok-green": {
+        "role": "tertiary",
+        "displayName": "Ok Green",
+        "canonical": "#17703f",
+        "cssVar": "--ok",
+        "theme": "light",
+        "tonalRamp": [
+          "#001004",
+          "#002e15",
+          "#005028",
+          "#1c7342",
+          "#449662",
+          "#68ba84",
+          "#8ddfa7",
+          "#c5ffd6"
+        ]
+      },
+      "ok-wash": {
+        "role": "tertiary",
+        "displayName": "Ok Wash",
+        "canonical": "#e3f1e7",
+        "cssVar": "--ok-bg",
+        "theme": "light",
+        "tonalRamp": [
+          "#050e08",
+          "#1d2821",
+          "#3a453d",
+          "#59655c",
+          "#79867d",
+          "#9ca9a0",
+          "#c0cdc3",
+          "#e5f3e9"
+        ]
+      },
+      "ok-on-bar": {
+        "role": "tertiary",
+        "displayName": "Ok On Bar",
+        "canonical": "#6fd69a",
+        "cssVar": "--ok-on-bar",
+        "theme": "light",
+        "tonalRamp": [
+          "#001005",
+          "#002e17",
+          "#00502d",
+          "#007444",
+          "#2b9961",
+          "#55bd83",
+          "#7ce2a6",
+          "#c4ffd9"
+        ]
+      },
+      "focus-blue": {
+        "role": "tertiary",
+        "displayName": "Focus Blue",
+        "canonical": "#0a5fd6",
+        "cssVar": "--focus",
+        "theme": "light",
+        "tonalRamp": [
+          "#000925",
+          "#002157",
+          "#003b90",
+          "#0058cd",
+          "#2f7cf6",
+          "#6ca5ff",
+          "#aacbff",
+          "#e5efff"
+        ]
+      },
+      "line-a-orange": {
+        "role": "secondary",
+        "displayName": "Line A Orange (Vowels)",
+        "canonical": "#f39700",
+        "cssVar": "--line-a",
+        "theme": "light",
+        "tonalRamp": [
+          "#140800",
+          "#371e00",
+          "#5f3800",
+          "#895300",
+          "#b67000",
+          "#e58e00",
+          "#ffb96c",
+          "#ffebd6"
+        ]
+      },
+      "line-k-blue": {
+        "role": "secondary",
+        "displayName": "Line K Blue (Ka, rapid Ga)",
+        "canonical": "#0096d6",
+        "cssVar": "--line-k",
+        "theme": "light",
+        "tonalRamp": [
+          "#000d18",
+          "#00283e",
+          "#004769",
+          "#006997",
+          "#008cc8",
+          "#37b0f2",
+          "#8dd3ff",
+          "#def2ff"
+        ]
+      },
+      "line-s-green": {
+        "role": "secondary",
+        "displayName": "Line S Green (Sa, rapid Za; brand ring)",
+        "canonical": "#009b48",
+        "cssVar": "--line-s",
+        "theme": "light",
+        "tonalRamp": [
+          "#001003",
+          "#002e11",
+          "#005022",
+          "#007535",
+          "#059c49",
+          "#44c16c",
+          "#6ee78f",
+          "#c7ffd2"
+        ]
+      },
+      "line-t-violet": {
+        "role": "secondary",
+        "displayName": "Line T Violet (Ta, rapid Da)",
+        "canonical": "#8a68b6",
+        "cssVar": "--line-t",
+        "theme": "light",
+        "tonalRamp": [
+          "#130026",
+          "#320b54",
+          "#502d76",
+          "#6f4e99",
+          "#916fbe",
+          "#b492e3",
+          "#d6baff",
+          "#f2eaff"
+        ]
+      },
+      "line-n-teal": {
+        "role": "secondary",
+        "displayName": "Line N Teal",
+        "canonical": "#00a29a",
+        "cssVar": "--line-n",
+        "theme": "light",
+        "tonalRamp": [
+          "#000f0d",
+          "#002c29",
+          "#004d49",
+          "#00706b",
+          "#00968f",
+          "#38bbb3",
+          "#65e1d7",
+          "#b5fff8"
+        ]
+      },
+      "line-h-brown": {
+        "role": "secondary",
+        "displayName": "Line H Brown (Ha, rapid Ba and Pa)",
+        "canonical": "#b0611c",
+        "cssVar": "--line-h",
+        "theme": "light",
+        "tonalRamp": [
+          "#170600",
+          "#3c1b00",
+          "#663200",
+          "#934b00",
+          "#bb6b29",
+          "#e18e4f",
+          "#ffb784",
+          "#ffeadc"
+        ]
+      },
+      "line-m-gold": {
+        "role": "secondary",
+        "displayName": "Line M Gold",
+        "canonical": "#c49b16",
+        "cssVar": "--line-m",
+        "theme": "light",
+        "tonalRamp": [
+          "#110a00",
+          "#302300",
+          "#533f00",
+          "#785d00",
+          "#a07d00",
+          "#c89f1f",
+          "#eec44f",
+          "#ffedc1"
+        ]
+      },
+      "line-y-magenta": {
+        "role": "secondary",
+        "displayName": "Line Y Magenta",
+        "canonical": "#dc4489",
+        "cssVar": "--line-y",
+        "theme": "light",
+        "tonalRamp": [
+          "#1d000c",
+          "#490026",
+          "#7b0044",
+          "#ae0a63",
+          "#d73f85",
+          "#ff67a7",
+          "#ffaeca",
+          "#ffe7ef"
+        ]
+      },
+      "line-r-leaf": {
+        "role": "secondary",
+        "displayName": "Line R Leaf",
+        "canonical": "#5aa83f",
+        "cssVar": "--line-r",
+        "theme": "light",
+        "tonalRamp": [
+          "#021000",
+          "#0b2e00",
+          "#1a5000",
+          "#2a7400",
+          "#4a982d",
+          "#6dbc53",
+          "#91e278",
+          "#ceffbf"
+        ]
+      },
+      "line-wn-slate": {
+        "role": "secondary",
+        "displayName": "Line Wn Slate",
+        "canonical": "#8a9ea8",
+        "cssVar": "--line-wn",
+        "theme": "light",
+        "tonalRamp": [
+          "#010d14",
+          "#172830",
+          "#33454e",
+          "#52646e",
+          "#72868f",
+          "#94a9b3",
+          "#b8cdd7",
+          "#ddf2fd"
+        ]
+      },
+      "line-neutral": {
+        "role": "secondary",
+        "displayName": "Line Neutral",
+        "canonical": "#9a9da2",
+        "cssVar": "--line-neutral",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b0f",
+          "#232529",
+          "#404246",
+          "#5f6166",
+          "#808287",
+          "#a2a5aa",
+          "#c6c9ce",
+          "#ebeff4"
+        ]
+      },
+      "heat-struggling": {
+        "role": "tertiary",
+        "displayName": "Heat Struggling",
+        "canonical": "#f0a83c",
+        "cssVar": "--heat-struggling",
+        "theme": "light",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5b3a00",
+          "#855600",
+          "#b07400",
+          "#db9420",
+          "#ffba5a",
+          "#ffebd3"
+        ]
+      },
+      "heat-learning": {
+        "role": "tertiary",
+        "displayName": "Heat Learning",
+        "canonical": "#e4f1e7",
+        "cssVar": "--heat-learning",
+        "theme": "light",
+        "tonalRamp": [
+          "#050e07",
+          "#1e2821",
+          "#3b453d",
+          "#59655c",
+          "#7a867d",
+          "#9da99f",
+          "#c0cdc3",
+          "#e5f2e8"
+        ]
+      },
+      "heat-solid": {
+        "role": "tertiary",
+        "displayName": "Heat Solid",
+        "canonical": "#b9dcc3",
+        "cssVar": "--heat-solid",
+        "theme": "light",
+        "tonalRamp": [
+          "#001004",
+          "#0e2c1a",
+          "#2c4a36",
+          "#4a6a54",
+          "#6b8c75",
+          "#8daf97",
+          "#b1d3bb",
+          "#d5f9df"
+        ]
+      },
+      "heat-mastered": {
+        "role": "tertiary",
+        "displayName": "Heat Mastered",
+        "canonical": "#1d6b43",
+        "cssVar": "--heat-mastered",
+        "theme": "light",
+        "tonalRamp": [
+          "#001005",
+          "#002e17",
+          "#00502d",
+          "#257249",
+          "#4a9469",
+          "#6eb88b",
+          "#92ddaf",
+          "#c4ffd9"
+        ]
+      },
+      "heat-ink-on-mastered": {
+        "role": "tertiary",
+        "displayName": "Heat Ink On Mastered",
+        "canonical": "#ffffff",
+        "cssVar": "--heat-ink-on-mastered",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "night-ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "#0d0f11",
+        "cssVar": "--ground",
+        "theme": "dark",
+        "tonalRamp": [
+          "#090b0d",
+          "#232528",
+          "#404245",
+          "#5f6164",
+          "#808385",
+          "#a2a5a8",
+          "#c6c9cc",
+          "#eceff2"
+        ]
+      },
+      "night-panel": {
+        "role": "neutral",
+        "displayName": "Night Panel",
+        "canonical": "#23282d",
+        "cssVar": "--panel",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070c10",
+          "#21262b",
+          "#3d4348",
+          "#5c6268",
+          "#7d8389",
+          "#9fa6ac",
+          "#c3cad1",
+          "#e9eff6"
+        ]
+      },
+      "night-panel-shade": {
+        "role": "neutral",
+        "displayName": "Night Panel Shade",
+        "canonical": "#2c3137",
+        "cssVar": "--panel-2",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080c11",
+          "#21262b",
+          "#3d4349",
+          "#5c6269",
+          "#7d838a",
+          "#a0a6ad",
+          "#c3cad2",
+          "#e9eff7"
+        ]
+      },
+      "night-panel-rim": {
+        "role": "neutral",
+        "displayName": "Night Panel Rim",
+        "canonical": "rgba(255, 255, 255, 0.12)",
+        "cssVar": "--panel-rim",
+        "theme": "dark",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "night-sign-bg": {
+        "role": "neutral",
+        "displayName": "Night Sign Bg",
+        "canonical": "#2b3036",
+        "cssVar": "--sign-bg",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080c11",
+          "#21262b",
+          "#3d4349",
+          "#5c6269",
+          "#7d838a",
+          "#9fa6ad",
+          "#c3cad2",
+          "#e9eff7"
+        ]
+      },
+      "night-sign-glow": {
+        "role": "neutral",
+        "displayName": "Night Sign Glow (centre)",
+        "canonical": "#31373d",
+        "cssVar": "--sign-glow",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070c11",
+          "#20262b",
+          "#3d4349",
+          "#5b6269",
+          "#7c838a",
+          "#9fa6ad",
+          "#c3cad2",
+          "#e8eff7"
+        ]
+      },
+      "night-ink": {
+        "role": "primary",
+        "displayName": "Night Ink",
+        "canonical": "#eef0ec",
+        "cssVar": "--ink",
+        "theme": "dark",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242623",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a4a6a2",
+          "#c8cac6",
+          "#edefeb"
+        ]
+      },
+      "night-ink-2": {
+        "role": "neutral",
+        "displayName": "Night Signage Grey",
+        "canonical": "#c0c5ca",
+        "cssVar": "--ink-2",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080c0f",
+          "#222629",
+          "#3e4247",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6aa",
+          "#c5cacf",
+          "#eaeff4"
+        ]
+      },
+      "night-ink-3": {
+        "role": "neutral",
+        "displayName": "Night Faded Grey",
+        "canonical": "#9ba1a7",
+        "cssVar": "--ink-3",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080c10",
+          "#21262a",
+          "#3d4348",
+          "#5c6267",
+          "#7d8389",
+          "#a0a6ac",
+          "#c4cad0",
+          "#e9eff6"
+        ]
+      },
+      "night-hairline": {
+        "role": "neutral",
+        "displayName": "Night Hairline",
+        "canonical": "#3c4249",
+        "cssVar": "--rule",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070c11",
+          "#20262c",
+          "#3d434a",
+          "#5b6269",
+          "#7c838b",
+          "#9fa6ae",
+          "#c3cad3",
+          "#e8eff8"
+        ]
+      },
+      "night-hairline-strong": {
+        "role": "neutral",
+        "displayName": "Night Hairline Strong",
+        "canonical": "#5d636a",
+        "cssVar": "--rule-strong",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070c11",
+          "#20262c",
+          "#3d4349",
+          "#5c6269",
+          "#7d838a",
+          "#9fa6ad",
+          "#c3cad2",
+          "#e8eff8"
+        ]
+      },
+      "night-bar": {
+        "role": "neutral",
+        "displayName": "Night Bar",
+        "canonical": "#050607",
+        "cssVar": "--bar",
+        "theme": "dark",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#5f6163",
+          "#808384",
+          "#a3a5a7",
+          "#c7c9cb",
+          "#eceff1"
+        ]
+      },
+      "night-bar-raised": {
+        "role": "neutral",
+        "displayName": "Night Bar Raised",
+        "canonical": "#16191c",
+        "cssVar": "--bar-2",
+        "theme": "dark",
+        "tonalRamp": [
+          "#090b0e",
+          "#222529",
+          "#3f4246",
+          "#5e6265",
+          "#7f8387",
+          "#a1a5aa",
+          "#c5cace",
+          "#ebeff3"
+        ]
+      },
+      "night-miss-red": {
+        "role": "tertiary",
+        "displayName": "Night Miss Red",
+        "canonical": "#ff7a63",
+        "cssVar": "--miss",
+        "theme": "dark",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0500",
+          "#7e0e00",
+          "#ac2c19",
+          "#d3533e",
+          "#fc7760",
+          "#ffb3a4",
+          "#ffe9e4"
+        ]
+      },
+      "night-miss-wash": {
+        "role": "tertiary",
+        "displayName": "Night Miss Wash",
+        "canonical": "#3b1813",
+        "cssVar": "--miss-bg",
+        "theme": "dark",
+        "tonalRamp": [
+          "#1e0100",
+          "#3c1914",
+          "#5c3630",
+          "#7e554e",
+          "#a2766e",
+          "#c69890",
+          "#ecbcb4",
+          "#ffe9e5"
+        ]
+      },
+      "night-ok-green": {
+        "role": "tertiary",
+        "displayName": "Night Ok Green",
+        "canonical": "#5fd08f",
+        "cssVar": "--ok",
+        "theme": "dark",
+        "tonalRamp": [
+          "#001005",
+          "#002e17",
+          "#00502c",
+          "#007543",
+          "#1b9a5d",
+          "#4cbf7f",
+          "#74e4a2",
+          "#c4ffd8"
+        ]
+      },
+      "night-ok-wash": {
+        "role": "tertiary",
+        "displayName": "Night Ok Wash",
+        "canonical": "#12311f",
+        "cssVar": "--ok-bg",
+        "theme": "dark",
+        "tonalRamp": [
+          "#001005",
+          "#0d2c1a",
+          "#2b4a37",
+          "#4a6a55",
+          "#6a8c76",
+          "#8daf98",
+          "#b0d3bc",
+          "#d5f9e1"
+        ]
+      },
+      "night-focus-blue": {
+        "role": "tertiary",
+        "displayName": "Night Focus Blue",
+        "canonical": "#6aa8ff",
+        "cssVar": "--focus",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000a22",
+          "#002352",
+          "#003e87",
+          "#235fb0",
+          "#4682d6",
+          "#68a6fd",
+          "#a7ccff",
+          "#e5efff"
+        ]
+      },
+      "night-line-k-blue": {
+        "role": "secondary",
+        "displayName": "Night Line K Blue",
+        "canonical": "#22aef0",
+        "cssVar": "--line-k",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000d17",
+          "#00293d",
+          "#004867",
+          "#006995",
+          "#008dc6",
+          "#28b1f3",
+          "#8bd3ff",
+          "#def2ff"
+        ]
+      },
+      "night-line-t-violet": {
+        "role": "secondary",
+        "displayName": "Night Line T Violet",
+        "canonical": "#a585d6",
+        "cssVar": "--line-t",
+        "theme": "dark",
+        "tonalRamp": [
+          "#120027",
+          "#310b54",
+          "#4e2e77",
+          "#6e4e9a",
+          "#8f70bf",
+          "#b292e4",
+          "#d4bbff",
+          "#f2eaff"
+        ]
+      },
+      "night-line-h-brown": {
+        "role": "secondary",
+        "displayName": "Night Line H Brown",
+        "canonical": "#d07a2e",
+        "cssVar": "--line-h",
+        "theme": "dark",
+        "tonalRamp": [
+          "#160700",
+          "#3b1b00",
+          "#653300",
+          "#924d00",
+          "#be6a17",
+          "#e58d44",
+          "#ffb781",
+          "#ffeadb"
+        ]
+      },
+      "night-line-wn-slate": {
+        "role": "secondary",
+        "displayName": "Night Line Wn Slate",
+        "canonical": "#a3b6c0",
+        "cssVar": "--line-wn",
+        "theme": "dark",
+        "tonalRamp": [
+          "#020d14",
+          "#18272f",
+          "#34454d",
+          "#53646d",
+          "#73868f",
+          "#96a8b2",
+          "#b9cdd7",
+          "#def2fd"
+        ]
+      },
+      "night-line-neutral": {
+        "role": "secondary",
+        "displayName": "Night Line Neutral",
+        "canonical": "#6c7076",
+        "cssVar": "--line-neutral",
+        "theme": "dark",
+        "tonalRamp": [
+          "#090b10",
+          "#22252a",
+          "#3f4248",
+          "#5e6167",
+          "#7e8389",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#eaeff6"
+        ]
+      },
+      "night-heat-struggling": {
+        "role": "tertiary",
+        "displayName": "Night Heat Struggling",
+        "canonical": "#d9902a",
+        "cssVar": "--heat-struggling",
+        "theme": "dark",
+        "tonalRamp": [
+          "#140800",
+          "#371f00",
+          "#5d3900",
+          "#875400",
+          "#b47200",
+          "#dc932e",
+          "#ffb965",
+          "#ffebd5"
+        ]
+      },
+      "night-heat-learning": {
+        "role": "tertiary",
+        "displayName": "Night Heat Learning",
+        "canonical": "#1f3527",
+        "cssVar": "--heat-learning",
+        "theme": "dark",
+        "tonalRamp": [
+          "#001005",
+          "#152b1d",
+          "#324839",
+          "#506858",
+          "#718979",
+          "#93ad9b",
+          "#b6d1bf",
+          "#dbf7e4"
+        ]
+      },
+      "night-heat-solid": {
+        "role": "tertiary",
+        "displayName": "Night Heat Solid",
+        "canonical": "#2f5b3e",
+        "cssVar": "--heat-solid",
+        "theme": "dark",
+        "tonalRamp": [
+          "#001004",
+          "#002e15",
+          "#204d30",
+          "#406d4f",
+          "#618f6f",
+          "#84b291",
+          "#a7d7b5",
+          "#ccfdd9"
+        ]
+      },
+      "night-heat-mastered": {
+        "role": "tertiary",
+        "displayName": "Night Heat Mastered",
+        "canonical": "#5fd08f",
+        "cssVar": "--heat-mastered",
+        "theme": "dark",
+        "tonalRamp": [
+          "#001005",
+          "#002e17",
+          "#00502c",
+          "#007543",
+          "#1b9a5d",
+          "#4cbf7f",
+          "#74e4a2",
+          "#c4ffd8"
+        ]
+      },
+      "night-heat-ink-on-mastered": {
+        "role": "tertiary",
+        "displayName": "Night Heat Ink On Mastered",
+        "canonical": "#0d0f11",
+        "cssVar": "--heat-ink-on-mastered",
+        "theme": "dark",
+        "tonalRamp": [
+          "#090b0d",
+          "#232528",
+          "#404245",
+          "#5f6164",
+          "#808385",
+          "#a2a5a8",
+          "#c6c9cc",
+          "#eceff2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "sign-kana": {
+        "displayName": "Sign Kana",
+        "purpose": "The hero kana on the study sign. Klee One textbook strokes; swaps to Noto Sans JP 500 under the print-kana setting (--font-kana / --kana-weight)."
+      },
+      "sign-kana-quiz": {
+        "displayName": "Quiz Kana",
+        "purpose": "The kana on the shorter quiz sign. On short laptop screens (max-height 800px) it drops to clamp(88px, 15vh, 120px). Word signs scale by length: 150px at 3 characters, 124px at 4, and 104px at 5-6."
+      },
+      "sign-romaji": {
+        "displayName": "Sign Romaji",
+        "purpose": "Reading under the kana; a 3.2em hairline blank before the answer."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles; balanced wrapping."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "title-panel": {
+        "displayName": "Panel Title",
+        "purpose": "Headings inside panels (17-18px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, 62ch max, tabular numerals throughout."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Crumbs, notes, stat rows, help."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Legends, keys hint, settings labels. Sentence case."
+      },
+      "option": {
+        "displayName": "Option",
+        "purpose": "Quiz answer buttons; 20px untracked for meaning options."
+      },
+      "key-cap": {
+        "displayName": "Key Cap",
+        "purpose": "Keyboard hints (1/2/3, Enter); hidden on hover-less devices."
+      },
+      "badge": {
+        "displayName": "Badge",
+        "purpose": "L/R passed-level badges under route-map stations."
+      },
+      "kana-print": {
+        "displayName": "Print Kana",
+        "purpose": "Alternate kana face selected in Settings ([data-kana-font=\"print\"])."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-rim",
+        "value": "inset 0 1px 0 var(--panel-rim)",
+        "purpose": "Top-edge rim light on night panels; transparent by day."
+      },
+      {
+        "name": "sign-rim",
+        "value": "inset 0 -1px 0 var(--panel-rim), 0 0 0 1px var(--panel-rim)",
+        "purpose": "Outline of the back-lit sign at night."
+      },
+      {
+        "name": "sign-miss",
+        "value": "0 0 0 1px var(--miss)",
+        "purpose": "With a Miss Red border: the hairline miss state on the sign."
+      },
+      {
+        "name": "station-halo",
+        "value": "0 0 0 3px var(--panel), 0 0 0 5px var(--ink)",
+        "purpose": "Next, selected or just-passed station on the route map."
+      },
+      {
+        "name": "ride-here-halo",
+        "value": "0 0 0 4px var(--ground), 0 0 0 6px var(--ink)",
+        "purpose": "The stop the train is at."
+      },
+      {
+        "name": "option-correct",
+        "value": "inset 0 0 0 1px var(--ok)",
+        "purpose": "Doubles the option border on a correct answer."
+      },
+      {
+        "name": "option-wrong",
+        "value": "inset 0 0 0 1px var(--miss)",
+        "purpose": "Doubles the option border on a wrong answer."
+      },
+      {
+        "name": "input-focus",
+        "value": "0 0 0 3px color-mix(in srgb, var(--focus) 55%, transparent)",
+        "purpose": "Typed-answer focus ring."
+      },
+      {
+        "name": "popover",
+        "value": "0 12px 32px rgba(0,0,0,.18)",
+        "purpose": "Settings popover only."
+      },
+      {
+        "name": "dialog",
+        "value": "0 16px 40px rgba(0,0,0,.25)",
+        "purpose": "Leave dialog; backdrop rgba(10, 12, 14, 0.45)."
+      }
+    ],
+    "focus": {
+      "value": "outline: 3px solid var(--focus); outline-offset: 2px",
+      "purpose": "Global :focus-visible on every control."
+    },
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing for state changes (--ease-out)."
+      },
+      {
+        "name": "ease-reset",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "The ride running back to the origin on a miss."
+      },
+      {
+        "name": "duration-option",
+        "value": "140ms",
+        "purpose": "Option background and border."
+      },
+      {
+        "name": "duration-control",
+        "value": "160ms",
+        "purpose": "Button background, disclosure chevron."
+      },
+      {
+        "name": "duration-station",
+        "value": "200ms",
+        "purpose": "Station dot scale, ride stop fill."
+      },
+      {
+        "name": "duration-sign",
+        "value": "260ms",
+        "purpose": "Band colour change; kana rise entrance (6px)."
+      },
+      {
+        "name": "duration-stop-in",
+        "value": "340ms",
+        "purpose": "Arrival: done stops pop in (scale 0.4 to 1), staggered 70ms per stop."
+      },
+      {
+        "name": "duration-ride",
+        "value": "420ms",
+        "purpose": "Streak fill advancing one stop."
+      },
+      {
+        "name": "duration-reset",
+        "value": "640ms",
+        "purpose": "Streak fill running back in Miss Red."
+      },
+      {
+        "name": "duration-arrive",
+        "value": "900ms",
+        "purpose": "Arrival ride fill."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "All motion is removed under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "one-column-options",
+        "value": "330px"
+      },
+      {
+        "name": "phone",
+        "value": "480px"
+      },
+      {
+        "name": "small",
+        "value": "560px"
+      },
+      {
+        "name": "welcome-stack",
+        "value": "600px"
+      },
+      {
+        "name": "heat-compact",
+        "value": "640px"
+      },
+      {
+        "name": "bar-wrap",
+        "value": "720px"
+      },
+      {
+        "name": "route-vertical",
+        "value": "860px"
+      },
+      {
+        "name": "stats-stack",
+        "value": "980px"
+      },
+      {
+        "name": "short-screen-quiz",
+        "value": "(max-height: 800px) and (min-width: 721px)"
+      },
+      {
+        "name": "touch",
+        "value": "(pointer: coarse): 44px targets"
+      },
+      {
+        "name": "no-hover",
+        "value": "(hover: none): key caps hidden"
+      }
+    ],
+    "themes": {
+      "light": ":root defaults",
+      "dark": "@media (prefers-color-scheme: dark) :root:not([data-theme=\"light\"]) and :root[data-theme=\"dark\"], duplicated with identical values; frontmatter keys prefixed night- map to the same CSS variables"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action in a group; iron ink, with an Enter key cap when it is the keyboard default.",
+      "html": "<button class=\"ds-btn-primary\">Start quiz <kbd class=\"ds-kbd\">Enter</kbd></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 20px; border: 1px solid var(--ink, #16191d); border-radius: 3px; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); font-size: 16px; font-weight: 500; cursor: pointer; transition: background 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); background: var(--ink, #16191d); color: var(--panel, #fafaf7); } .ds-btn-primary:hover { background: var(--ink-2, #474d53); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; } .ds-kbd { display: inline-block; min-width: 1.6em; padding: 0 0.4em; margin-left: 4px; border: 1px solid currentColor; border-radius: 3px; font: 500 12px/1.6 var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); opacity: 0.8; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Hairline ink outline for alternatives such as Hear it or Keep going.",
+      "html": "<button class=\"ds-btn-secondary\">Keep going</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 20px; border: 1px solid var(--ink, #16191d); border-radius: 3px; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); font-size: 16px; font-weight: 500; cursor: pointer; transition: background 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); background: transparent; color: var(--ink, #16191d); } .ds-btn-secondary:hover { background: var(--panel-2, #f0f0ea); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Borderless grey for exits and resets: End lesson, Pick again, Clear.",
+      "html": "<button class=\"ds-btn-quiet\">End lesson</button>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 20px; border: 1px solid var(--ink, #16191d); border-radius: 3px; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); font-size: 16px; font-weight: 500; cursor: pointer; transition: background 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); border-color: transparent; background: transparent; color: var(--ink-2, #474d53); } .ds-btn-quiet:hover { color: var(--ink, #16191d); background: var(--panel-2, #f0f0ea); } .ds-btn-quiet:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Top Bar Tabs",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Dark sticky bar with the brand station ring and level tabs; the current tab is an inverted pill.",
+      "html": "<nav class=\"ds-bar\"><span class=\"ds-ring\"></span><b class=\"ds-brand\">Kana Dojo</b><a href=\"#\" class=\"ds-tab\" aria-current=\"page\">Learn</a><a href=\"#\" class=\"ds-tab\">Recall</a><a href=\"#\" class=\"ds-tab\">Mix</a><a href=\"#\" class=\"ds-tab\">Stats</a></nav>",
+      "css": ".ds-bar { display: flex; align-items: center; gap: 4px; height: 60px; padding: 0 24px; background: var(--bar, #16191d); color: var(--bar-ink, #f3f3ef); font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); } .ds-ring { width: 22px; height: 22px; border-radius: 50%; border: 4px solid var(--line-s, #009b48); margin-right: 10px; } .ds-brand { font-size: 17px; margin-right: 24px; } .ds-tab { padding: 7px 14px; border-radius: 3px; color: var(--bar-ink-2, #b4b9be); text-decoration: none; font-size: 15px; } .ds-tab:hover { color: var(--bar-ink, #f3f3ef); background: var(--bar-2, #23272c); } .ds-tab[aria-current=\"page\"] { background: var(--bar-ink, #f3f3ef); color: var(--bar, #16191d); font-weight: 500; } .ds-tab:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Station Sign",
+      "kind": "custom",
+      "refersTo": "station-sign",
+      "description": "The ekimei-hyo study card: line band, code ring, hero kana, romaji, black neighbour strip.",
+      "html": "<section class=\"ds-sign\" style=\"--band: var(--line-s, #009b48)\"><div class=\"ds-band\"></div><div class=\"ds-body\"><div class=\"ds-code\"><b>S</b><strong>02</strong></div><div class=\"ds-script\">ひらがな<br>Hiragana</div><div class=\"ds-kana\" lang=\"ja\">し</div><div class=\"ds-romaji\">shi</div></div><div class=\"ds-strip\"><button class=\"ds-nb\">← sa さ</button><span class=\"ds-mid\">2 of 5</span><button class=\"ds-nb ds-next\">す su →</button></div></section>",
+      "css": ".ds-sign { max-width: 960px; background: var(--panel, #fafaf7); border: 1px solid var(--rule, #c4c5bf); border-radius: 3px; overflow: hidden; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); color: var(--ink, #16191d); box-shadow: inset 0 -1px 0 var(--panel-rim, transparent), 0 0 0 1px var(--panel-rim, transparent); } .ds-band { height: 14px; background: var(--band, var(--line-neutral, #9a9da2)); transition: background 260ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-body { position: relative; display: grid; place-items: center; padding: 36px 16px 24px; min-height: 260px; background: radial-gradient(ellipse 70% 90% at 50% 45%, var(--sign-glow, #fafaf7), var(--sign-bg, #fafaf7)); } .ds-kana { font-family: var(--font-kana, \"Klee One\", \"Yu Mincho\", serif); font-weight: 600; font-size: 160px; line-height: 1; } .ds-romaji { margin-top: 10px; font-size: 30px; font-weight: 500; letter-spacing: 0.08em; } .ds-code { position: absolute; left: 24px; top: 20px; width: 64px; height: 64px; border-radius: 50%; border: 7px solid var(--band); background: var(--panel, #fafaf7); display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; font-weight: 700; } .ds-code b { font-size: 12px; } .ds-code strong { font-size: 21px; } .ds-script { position: absolute; right: 24px; top: 20px; font-size: 13px; color: var(--ink-3, #62686e); text-align: right; line-height: 1.4; } .ds-strip { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 64px; padding: 0 24px; background: var(--bar, #16191d); color: var(--bar-ink, #f3f3ef); } .ds-nb { background: none; border: 0; color: inherit; font: inherit; font-size: 18px; padding: 8px 4px; border-radius: 3px; cursor: pointer; justify-self: start; } .ds-nb:hover { background: var(--bar-2, #23272c); } .ds-next { justify-self: end; } .ds-mid { font-size: 14px; color: var(--bar-ink-2, #b4b9be); } .ds-nb:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Answer Options",
+      "kind": "button",
+      "refersTo": "answer-option",
+      "description": "Three wide quiz buttons with 1/2/3 key caps; correct and wrong answers mark with a hairline and a wash.",
+      "html": "<div class=\"ds-opts\"><button class=\"ds-opt\"><kbd class=\"ds-k\">1</kbd>shi</button><button class=\"ds-opt\" data-state=\"wrong\"><kbd class=\"ds-k\">2</kbd>tsu</button><button class=\"ds-opt\" data-state=\"correct\"><kbd class=\"ds-k\">3</kbd>su</button></div>",
+      "css": ".ds-opts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 960px; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); } .ds-opt { position: relative; min-height: 76px; background: var(--panel, #fafaf7); border: 1px solid var(--rule-strong, #8d9096); border-radius: 3px; color: var(--ink, #16191d); font: 500 26px var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); letter-spacing: 0.04em; cursor: pointer; transition: background 140ms, border-color 140ms; } .ds-opt:hover { border-color: var(--ink, #16191d); background: var(--panel-2, #f0f0ea); } .ds-opt[data-state=\"correct\"] { border-color: var(--ok, #17703f); background: var(--ok-bg, #e3f1e7); box-shadow: inset 0 0 0 1px var(--ok, #17703f); } .ds-opt[data-state=\"wrong\"] { border-color: var(--miss, #b02a17); background: var(--miss-bg, #fbe8e3); box-shadow: inset 0 0 0 1px var(--miss, #b02a17); } .ds-k { position: absolute; left: 12px; top: 10px; min-width: 1.6em; padding: 0 0.4em; border: 1px solid var(--rule-strong, #8d9096); border-radius: 3px; font: 500 12px/1.6 var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); color: var(--ink-2, #474d53); background: var(--panel, #fafaf7); letter-spacing: 0; } .ds-opt:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    },
+    {
+      "name": "Romaji Input",
+      "kind": "input",
+      "refersTo": "type-input",
+      "description": "The Level 3 typed-answer box: big centred entry, ink border and blue ring on focus, red border when invalid.",
+      "html": "<input class=\"ds-input\" placeholder=\"Type the romaji\" aria-label=\"Romaji\">",
+      "css": ".ds-input { width: 100%; max-width: 420px; height: 60px; padding: 0 18px; font: 400 26px var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); letter-spacing: 0.06em; text-align: center; color: var(--ink, #16191d); border: 1px solid var(--rule-strong, #8d9096); border-radius: 3px; background: var(--panel, #fafaf7); caret-color: var(--ink, #16191d); } .ds-input::placeholder { color: var(--ink-3, #62686e); letter-spacing: 0; font-size: 18px; } .ds-input:focus { outline: none; border-color: var(--ink, #16191d); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus, #0a5fd6) 55%, transparent); } .ds-input[aria-invalid=\"true\"] { border-color: var(--miss, #b02a17); }"
+    },
+    {
+      "name": "Route Map Stations",
+      "kind": "custom",
+      "refersTo": "station-dot",
+      "description": "Stations as line-colour rings on a 6px track: passed filled, next haloed, locked dashed, rapid double-ringed.",
+      "html": "<ol class=\"ds-route\"><li class=\"ds-st\" style=\"--line: var(--line-a, #f39700)\" data-state=\"passed\"><span class=\"ds-dot\"></span>あ</li><li class=\"ds-st\" style=\"--line: var(--line-k, #0096d6)\" data-state=\"next\"><span class=\"ds-dot\"></span>か</li><li class=\"ds-st ds-rapid\" style=\"--line: var(--line-k, #0096d6)\"><span class=\"ds-dot\"></span>が</li><li class=\"ds-st\" data-state=\"locked\"><span class=\"ds-dot\"></span>ざ</li></ol>",
+      "css": ".ds-route { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 64px); position: relative; font-family: var(--font-kana, \"Klee One\", \"Yu Mincho\", serif); font-weight: 600; font-size: 18px; color: var(--ink, #16191d); } .ds-route::before { content: \"\"; position: absolute; left: 32px; right: 32px; top: 12px; height: 6px; background: var(--rule, #c4c5bf); } .ds-st { display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative; } .ds-dot { width: 30px; height: 30px; border-radius: 50%; background: var(--panel, #fafaf7); border: 5px solid var(--line); position: relative; z-index: 1; transition: transform 200ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-st:hover .ds-dot { transform: scale(1.12); } .ds-st[data-state=\"passed\"] .ds-dot { background: var(--line); } .ds-st[data-state=\"next\"] .ds-dot { transform: scale(1.2); box-shadow: 0 0 0 3px var(--panel, #fafaf7), 0 0 0 5px var(--ink, #16191d); } .ds-rapid .ds-dot { border-style: double; border-width: 7px; } .ds-st[data-state=\"locked\"] { color: var(--ink-3, #62686e); } .ds-st[data-state=\"locked\"] .ds-dot { border: 3px dashed var(--rule-strong, #8d9096); }"
+    },
+    {
+      "name": "The Ride (streak strip)",
+      "kind": "custom",
+      "refersTo": "ride-stop",
+      "description": "One stop per needed correct answer; the ink fill advances stop by stop and runs back in red on a miss.",
+      "html": "<div class=\"ds-ride\"><div class=\"ds-ride-head\"><span>Ka row</span><span><strong>2</strong> of 5 in a row</span></div><ol><span class=\"ds-fill\" style=\"width:50%\"></span><li class=\"done\"><span class=\"ds-stop\"></span>か</li><li class=\"done\"><span class=\"ds-stop\"></span>き</li><li class=\"here\"><span class=\"ds-stop\"></span></li><li><span class=\"ds-stop\"></span></li><li><span class=\"ds-stop\"></span></li></ol></div>",
+      "css": ".ds-ride { max-width: 560px; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); color: var(--ink, #16191d); } .ds-ride-head { display: flex; justify-content: space-between; font-size: 14px; color: var(--ink-2, #474d53); margin-bottom: 8px; } .ds-ride ol { list-style: none; margin: 0 6px; padding: 0; display: flex; position: relative; } .ds-ride ol::before { content: \"\"; position: absolute; left: 0; right: 0; top: 10px; height: 4px; background: var(--rule, #c4c5bf); } .ds-fill { position: absolute; left: 0; top: 10px; height: 4px; background: var(--ink, #16191d); transition: width 420ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-ride li { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; position: relative; z-index: 1; min-height: 46px; font-family: var(--font-kana, \"Klee One\", \"Yu Mincho\", serif); font-weight: 600; font-size: 18px; } .ds-ride li:first-of-type { align-items: flex-start; } .ds-ride li:last-of-type { align-items: flex-end; } .ds-stop { width: 24px; height: 24px; border-radius: 50%; background: var(--panel, #fafaf7); border: 4px solid var(--rule-strong, #8d9096); transition: background 200ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), border-color 200ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-ride li.done .ds-stop { background: var(--ink, #16191d); border-color: var(--ink, #16191d); } .ds-ride li.here .ds-stop { border-color: var(--ink, #16191d); box-shadow: 0 0 0 4px var(--ground, #e8e8e2), 0 0 0 6px var(--ink, #16191d); }"
+    },
+    {
+      "name": "Heat Map Cells",
+      "kind": "custom",
+      "refersTo": "heat-cell",
+      "description": "Gojuon chart cells; every band pairs colour with a pattern so state never relies on colour alone.",
+      "html": "<div class=\"ds-heat\"><button class=\"ds-cell\" data-band=\"unseen\"><span class=\"ds-ck\">ぬ</span><span class=\"ds-r\">nu</span></button><button class=\"ds-cell\" data-band=\"struggling\"><span class=\"ds-ck\">ね</span><span class=\"ds-r\">ne</span></button><button class=\"ds-cell\" data-band=\"learning\"><span class=\"ds-ck\">な</span><span class=\"ds-r\">na</span></button><button class=\"ds-cell\" data-band=\"solid\"><span class=\"ds-ck\">に</span><span class=\"ds-r\">ni</span></button><button class=\"ds-cell\" data-band=\"mastered\"><span class=\"ds-ck\">の</span><span class=\"ds-r\">no</span></button></div>",
+      "css": ".ds-heat { display: flex; gap: 4px; } .ds-cell { width: 54px; height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 3px; border: 1px solid var(--rule-strong, #8d9096); background: var(--panel, #fafaf7); color: var(--ink, #16191d); position: relative; padding: 0 0 7px; cursor: pointer; font-family: var(--font-ui, \"Noto Sans JP\", \"Yu Gothic UI\", Meiryo, system-ui, sans-serif); } .ds-cell::after { content: \"\"; position: absolute; left: 3px; right: 3px; bottom: 3px; height: 5px; border-radius: 1px; } .ds-ck { font-family: var(--font-kana, \"Klee One\", \"Yu Mincho\", serif); font-weight: 600; font-size: 26px; line-height: 1.1; } .ds-r { font-size: 11px; color: var(--ink-2, #474d53); line-height: 1.1; } .ds-cell[data-band=\"unseen\"] { border-style: dashed; } .ds-cell[data-band=\"unseen\"] .ds-ck { color: var(--ink-3, #62686e); } .ds-cell[data-band=\"struggling\"] { background: color-mix(in srgb, var(--heat-struggling, #f0a83c) 26%, var(--panel, #fafaf7)); border-color: var(--heat-struggling, #f0a83c); } .ds-cell[data-band=\"struggling\"]::after { background: repeating-linear-gradient(135deg, var(--heat-struggling, #f0a83c) 0 3px, transparent 3px 5px); } .ds-cell[data-band=\"learning\"] { background: var(--heat-learning, #e4f1e7); } .ds-cell[data-band=\"learning\"]::after { background: radial-gradient(circle, var(--heat-mastered, #1d6b43) 1.3px, transparent 1.8px) 0 50% / 6px 5px repeat-x; } .ds-cell[data-band=\"solid\"] { background: var(--heat-solid, #b9dcc3); } .ds-cell[data-band=\"solid\"]::after { background: var(--heat-mastered, #1d6b43); right: 50%; } .ds-cell[data-band=\"mastered\"] { background: var(--heat-mastered, #1d6b43); border-color: var(--heat-mastered, #1d6b43); color: var(--heat-ink-on-mastered, #ffffff); } .ds-cell[data-band=\"mastered\"] .ds-r { color: var(--heat-ink-on-mastered, #ffffff); } .ds-cell[data-band=\"mastered\"]::after { background: var(--heat-ink-on-mastered, #ffffff); } .ds-cell:focus-visible { outline: 3px solid var(--focus, #0a5fd6); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Station Board",
+    "overview": "Every kana is a station and every set is a rail line. The study card is an ekimei-hyō, the enamel name board on a Japanese platform: a band in the line's colour on top, a ringed station code (し = S02), the kana large in the middle, the romaji under it, and a black strip below naming the neighbouring stations. Progress is drawn as a route map. A streak is a train that moves one stop per correct answer and returns to the first stop on a miss. The interface borrows only what transit signage already does: flat enamel panels, iron-black type, one hairline weight for borders, and saturated line colours that identify a line and do nothing else.\n\nThe density is calm, and only one thing is the hero on each screen. On a lesson screen the sign fills the centre column (960px at most), with the kana at up to 210px, and everything else sits under it in quiet ink. Chrome is a dark top bar and enamel panels on a pale concrete ground. There are no floating rounded cards, gradient fills, accent buttons or decorative illustration. The primary action is filled in iron ink, not in a brand hue, because in this world colour belongs to the lines.\n\nAt night the board is back-lit. Dark mode is the night platform: a near-black ground, panels lifted to a warm charcoal with a faint top rim, and the sign body lit from within by a radial glow, as an illuminated sign is.",
+    "keyCharacteristics": [
+      "Enamel panels on concrete, with 1px hairline borders and 3px corners.",
+      "Fifteen line colours (Tokyo-style), one per set. Dakuten sets run as \"rapid\" services on their base line's colour, with a double band and double rings.",
+      "Kana are set in Klee One 600 (textbook shapes). The UI and romaji are set in Noto Sans JP.",
+      "Feedback is a hairline, never a slab. One red is used, only for misses.",
+      "Line-and-ring geometry (stations, tracks, rides) is the signature form.",
+      "The dark theme is a back-lit night platform, not an inverted day."
+    ],
+    "rules": [
+      {
+        "name": "The Line Owns Its Colour Rule",
+        "body": "A line colour identifies a set. It appears on bands, code rings, station dots and the arrival ride, and nowhere else: never on text, buttons, panel fills or chrome.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Red Rule",
+        "body": "Miss Red means \"that answer was wrong\" and is held until the answer is corrected. Struggling is amber, and focus is blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Unrevealed Line Rule",
+        "body": "In a quiz the band stays neutral and the code ring stays hidden until the learner answers, because the line colour and code would reveal the row.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Is The Action Rule",
+        "body": "The primary action is filled with Iron Ink. Don't add a brand accent hue for buttons or links.",
+        "section": "colors"
+      },
+      {
+        "name": "The Kana Is The Hero Rule",
+        "body": "No other type on a screen comes within half the size of the kana. Nothing else is set in Klee One.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Uppercase Rule",
+        "body": "Labels stay in sentence case at weight 400–500. Signage hierarchy comes from size and weight, not from letter-spaced capitals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Platform Rule",
+        "body": "Nothing on the page casts a shadow. Only layers floating above it (popovers and dialogs) get a soft drop.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Back-Lit Night Rule",
+        "body": "In dark mode, lift panels by tone, give them a rim light, and light the sign from inside. Never put a pure-black card on a black ground.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give each set its line colour on the band, code ring and station dot, and reuse the base line for dakuten as a double-band rapid service.",
+      "**Do** keep the band neutral (line-neutral) and the code ring hidden until a quiz answer is in.",
+      "**Do** mark a miss with a hairline (a Miss Red border plus a 1px ring) and a small strip icon, and hold it until corrected.",
+      "**Do** pair every heat-map colour with a pattern (dashes, stripes, dots, half bar or full bar).",
+      "**Do** fill the primary action with Iron Ink, and keep exactly one primary per action group.",
+      "**Do** keep touch targets at 44px under coarse pointers, and keep 1280×720 quiz states scroll-free.",
+      "**Do** run all motion on cubic-bezier(0.16, 1, 0.3, 1), and drop all of it under prefers-reduced-motion."
+    ],
+    "donts": [
+      "**Don't** put a line colour on text, buttons, links or panel fills.",
+      "**Don't** use Miss Red for anything but a wrong answer. Struggling is amber.",
+      "**Don't** fill a sign or panel with red on a miss.",
+      "**Don't** add shadows to panels or signs. Shadows are for popovers and dialogs only.",
+      "**Don't** round panels beyond 3px or float them as cards.",
+      "**Don't** set anything but kana in Klee One, or let any text compete with the sign kana.",
+      "**Don't** render the dark theme as black cards on black. Lift and back-light them."
+    ]
+  }
+}

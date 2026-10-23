@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Station Board</title>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{background:#ecece6;color:#16191d;font-family:"Noto Sans JP",system-ui,sans-serif}
+.top{height:64px;display:flex;align-items:center;padding:0 40px;gap:40px;background:#16191d;color:#f6f6f2}
+.brand{font-weight:700;font-size:18px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.brand i{width:22px;height:22px;border-radius:50%;border:4px solid #009944;display:inline-block}
+nav{display:flex;gap:4px}
+nav a{padding:8px 16px;font-size:15px;color:#b9bdc2;border-radius:4px}
+nav a.on{background:#f6f6f2;color:#16191d;font-weight:500}
+.sp{flex:1}
+.seg{display:flex;border:1px solid #4a4f55;border-radius:4px;overflow:hidden;font-size:14px}
+.seg span{padding:6px 14px}.seg .on{background:#f6f6f2;color:#16191d}
+main{padding:40px 80px 0;display:flex;flex-direction:column;align-items:center}
+.crumb{align-self:flex-start;font-size:14px;color:#5b6168;margin-bottom:18px;display:flex;gap:10px;align-items:center}
+.ring{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:3px solid #009944;font-size:11px;font-weight:700;color:#16191d;background:#fff}
+.sign{width:1000px;background:#f9f9f6;border:1px solid #c9cac4;box-shadow:0 1px 0 #c9cac4}
+.sign .band{height:14px;background:#009944}
+.sign .body{height:330px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.code{position:absolute;left:36px;top:30px;width:76px;height:76px;border-radius:50%;border:8px solid #009944;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;line-height:1}
+.code b{font-size:13px;font-weight:700}.code strong{font-size:24px;font-weight:700}
+.kana{font-family:"Klee One",serif;font-size:220px;line-height:1;font-weight:600}
+.romaji{font-size:34px;letter-spacing:.08em;margin-top:6px;font-weight:500}
+.next{height:72px;background:#16191d;color:#f6f6f2;display:flex;align-items:center;justify-content:space-between;padding:0 32px;font-size:22px}
+.next span{display:flex;align-items:center;gap:14px}.next em{font-style:normal;font-family:"Klee One";font-size:30px}
+.next small{font-size:15px;color:#b9bdc2}
+.controls{width:1000px;display:flex;align-items:center;margin-top:24px;gap:16px}
+.dots{display:flex;gap:8px;align-items:center;font-size:14px;color:#5b6168}
+.dots i{width:10px;height:10px;border-radius:50%;background:#c9cac4}.dots i.on{background:#009944}
+.btn{padding:12px 22px;border:1px solid #16191d;border-radius:4px;font-size:16px;background:transparent}
+.btn.pri{background:#16191d;color:#f6f6f2}
+.keys{font-size:13px;color:#5b6168}
+kbd{border:1px solid #b5b7b1;border-radius:3px;padding:1px 6px;font-family:inherit;background:#fff}
+.route{position:absolute;left:80px;right:80px;bottom:34px}
+.route h4{font-size:13px;color:#5b6168;font-weight:500;margin-bottom:12px;letter-spacing:.06em}
+.line{position:relative;height:56px;display:flex;justify-content:space-between;align-items:flex-start}
+.line:before{content:"";position:absolute;left:12px;right:12px;top:11px;height:6px;background:#c9cac4}
+.line:after{content:"";position:absolute;left:12px;width:150px;top:11px;height:6px;background:#16191d}
+.st{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;width:60px}
+.st i{width:28px;height:28px;border-radius:50%;background:#fff;border:5px solid #c9cac4}
+.st.done i{border-color:#16191d;background:#16191d}
+.st.cur i{border-color:#009944;width:34px;height:34px;margin-top:-3px}
+.st.cur{font-weight:700}
+.st b{font-family:"Klee One";font-size:18px;font-weight:600}
+</style></head><body>
+<header class="top"><div class="brand"><i></i>Kana Dojo</div>
+<nav><a class="on">Learn</a><a>Recall</a><a>Mix</a><a>Type</a><a>Stats</a></nav>
+<div class="sp"></div><div class="seg"><span class="on">ひらがな</span><span>カタカナ</span></div><span style="font-size:14px;color:#b9bdc2">Sound on</span></header>
+<main>
+<div class="crumb"><span class="ring">S</span>Level 0 · Learn · Sa row · Study</div>
+<section class="sign"><div class="band"></div>
+<div class="body"><div class="code"><b>S</b><strong>02</strong></div><div class="kana">し</div><div class="romaji">shi</div></div>
+<div class="next"><span>← <em>さ</em> sa</span><small>2 of 5</small><span>su <em>す</em> →</span></div></section>
+<div class="controls"><div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+<span class="keys"><kbd>←</kbd> <kbd>→</kbd> browse · <kbd>Space</kbd> next</span><div class="sp" style="flex:1"></div>
+<button class="btn">Hear it</button><button class="btn pri">Start quiz →</button></div>
+</main>
+<section class="route"><h4>HIRAGANA LINE · 2 OF 15 SETS PASSED</h4>
+<div class="line">
+<div class="st done"><i></i><b>あ</b>a</div><div class="st done"><i></i><b>か</b>k</div><div class="st cur"><i></i><b>さ</b>s</div>
+<div class="st"><i></i><b>た</b>t</div><div class="st"><i></i><b>な</b>n</div><div class="st"><i></i><b>は</b>h</div><div class="st"><i></i><b>ま</b>m</div>
+<div class="st"><i></i><b>や</b>y</div><div class="st"><i></i><b>ら</b>r</div><div class="st"><i></i><b>わ</b>w·n</div>
+<div class="st"><i></i><b>が</b>g</div><div class="st"><i></i><b>ざ</b>z</div><div class="st"><i></i><b>だ</b>d</div><div class="st"><i></i><b>ば</b>b</div><div class="st"><i></i><b>ぱ</b>p</div>
+</div></section>
+</body></html>

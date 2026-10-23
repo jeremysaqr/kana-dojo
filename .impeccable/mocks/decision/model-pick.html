@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Practice Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{background:#fbfbf8;color:#2b2b2b;font-family:"Noto Sans JP",system-ui,sans-serif}
+.top{height:60px;display:flex;align-items:center;padding:0 48px;gap:36px;border-bottom:1px solid #cfe0d4}
+.brand{font-weight:700;font-size:18px}
+nav{display:flex;gap:28px;font-size:15px;color:#6a6a66}
+nav .on{color:#2b2b2b;border-bottom:2px solid #5f9e74;padding-bottom:4px}
+.sp{flex:1}
+.seg{font-size:14px;color:#6a6a66}.seg b{color:#2b2b2b}
+main{display:grid;grid-template-columns:1fr 360px;gap:56px;padding:44px 80px}
+.head{font-size:14px;color:#6a6a66;margin-bottom:20px}
+.streak{display:flex;gap:10px;margin-bottom:28px}
+.streak i{width:44px;height:44px;border:1px solid #5f9e74;position:relative}
+.streak i.on:after{content:"";position:absolute;inset:7px;border:3px solid #d9452b;border-radius:50%}
+.masu{width:420px;height:420px;border:2px solid #5f9e74;position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:32px}
+.masu:before,.masu:after{content:"";position:absolute;background:none;border:0 dashed #a9cbb3}
+.masu:before{left:50%;top:0;bottom:0;border-left-width:1px}
+.masu:after{top:50%;left:0;right:0;border-top-width:1px}
+.masu span{font-family:"Klee One";font-size:300px;font-weight:600;line-height:1;position:relative;z-index:1}
+.opts{display:flex;gap:16px}
+.opt{width:180px;height:72px;border:1px solid #2b2b2b;display:flex;align-items:center;justify-content:center;gap:14px;font-size:24px;background:#fff}
+.opt small{font-size:13px;color:#6a6a66;border:1px solid #c8c8c2;padding:0 6px}
+aside h3{font-size:14px;font-weight:500;color:#6a6a66;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(5,56px);gap:0;border-left:1px solid #5f9e74;border-top:1px solid #5f9e74;width:max-content;margin-bottom:28px}
+.grid b{width:56px;height:56px;border-right:1px solid #5f9e74;border-bottom:1px solid #5f9e74;display:flex;align-items:center;justify-content:center;font-family:"Klee One";font-size:26px;font-weight:600}
+.m{background:#e3efe6}.w{background:#f7ddd6}.u{color:#c3c3bd}
+.note{font-size:14px;line-height:1.7;color:#4a4a46}
+.note em{font-style:normal;color:#d9452b}
+</style></head><body>
+<header class="top"><div class="brand">Kana Dojo</div><nav><span class="on">Learn</span><span>Recall</span><span>Mix</span><span>Type</span><span>Stats</span></nav><div class="sp"></div><div class="seg"><b>ひらがな</b> · カタカナ</div></header>
+<main><section>
+<div class="head">Level 0 · Learn · Sa row · Quiz — 3 of 5 in a row</div>
+<div class="streak"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+<div class="masu"><span>そ</span></div>
+<div class="opts"><div class="opt"><small>1</small>so</div><div class="opt"><small>2</small>shi</div><div class="opt"><small>3</small>tsu</div></div>
+</section>
+<aside><h3>Hiragana · this week</h3>
+<div class="grid"><b class="m">あ</b><b class="m">い</b><b class="m">う</b><b class="m">え</b><b class="m">お</b><b class="m">か</b><b class="w">き</b><b class="m">く</b><b>け</b><b class="m">こ</b><b>さ</b><b class="w">し</b><b>す</b><b>せ</b><b class="w">そ</b><b class="u">た</b><b class="u">ち</b><b class="u">つ</b><b class="u">て</b><b class="u">と</b></div>
+<p class="note">Most confused: <em>し ↔ そ</em> (4 times), <em>き ↔ さ</em> (2).<br>Next to drill: the sa row.</p></aside></main>
+</body></html>

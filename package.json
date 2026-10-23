@@ -1,0 +1,75 @@
+{
+  "name": "kana-dojo",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Hiragana & katakana flash card trainer with weakness tracking",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "app": "electron .",
+    "dist": "electron-builder --win",
+    "release": "node tools/release.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.9"
+  },
+  "main": "electron/main.js",
+  "author": "jeremysaqr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremysaqr/kana-dojo.git"
+  },
+  "build": {
+    "appId": "com.jeremysaqr.kanadojo",
+    "productName": "Kana Dojo",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "package.json",
+      "server.js",
+      "electron/**",
+      "public/**",
+      "src/**",
+      "!**/*.map"
+    ],
+    "asar": false,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Kana Dojo",
+      "deleteAppDataOnUninstall": false
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "jeremysaqr",
+        "repo": "kana-dojo",
+        "releaseType": "release"
+      }
+    ]
+  }
+}

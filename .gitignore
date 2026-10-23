@@ -1,0 +1,15 @@
+# your progress (personal) and anything the app writes at run time
+data/
+# dependencies and build output
+node_modules/
+dist/
+# test and bug-hunt run output
+tools/persona/*/
+!tools/persona/robust/
+tools/persona/robust/robust-runs/
+.pytest_cache/
+# machine-local settings
+.claude/settings.local.json
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/live/

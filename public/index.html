@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kana Dojo</title>
+  <meta name="description" content="Learn hiragana and katakana row by row; Kana Dojo drills the characters you miss.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/klee-one-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    // Apply saved theme/font before first paint (per-viewer convenience; the source of truth is progress.json).
+    try {
+      const t = localStorage.getItem('kd-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      if (localStorage.getItem('kd-font') === 'print') document.documentElement.dataset.kanaFont = 'print';
+    } catch {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/learn" aria-label="Kana Dojo home"><span class="brand-ring" aria-hidden="true"></span><span class="brand-text">Kana Dojo</span></a>
+    <nav class="tabs" aria-label="Levels and stats">
+      <a href="#/learn" data-tab="learn">Learn</a>
+      <a href="#/recall" data-tab="recall">Recall</a>
+      <a href="#/mix" data-tab="mix">Mix</a>
+      <a href="#/type" data-tab="type">Type</a>
+      <a href="#/words" data-tab="words">Words</a>
+      <a href="#/stats" data-tab="stats">Stats</a>
+    </nav>
+    <span class="spacer"></span>
+    <div class="bar-controls">
+      <div class="seg" role="group" aria-label="Script" id="script-toggle">
+        <button type="button" data-script="hiragana" aria-pressed="true"><span lang="ja">ひらがな</span><span class="sr-only"> Hiragana</span></button>
+        <button type="button" data-script="katakana" aria-pressed="false"><span lang="ja">カタカナ</span><span class="sr-only"> Katakana</span></button>
+      </div>
+      <button type="button" class="profile-btn" id="profile-btn" hidden><span class="profile-initial" aria-hidden="true"></span><span class="profile-label"></span></button>
+      <button type="button" class="icon-btn" id="mute-btn" aria-pressed="false" aria-label="Mute sound"></button>
+      <button type="button" class="icon-btn" id="settings-btn" aria-expanded="false" aria-controls="settings" aria-label="Settings"></button>
+    </div>
+  </header>
+  <div id="settings" class="settings" hidden></div>
+  <div id="banner" class="banner" role="alert" hidden></div>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <main id="app" tabindex="-1">
+    <p class="boot-note">Loading Kana Dojo… If this message stays, make sure the Kana Dojo window is still open, then reload this page.</p>
+    <noscript><p class="boot-note">Kana Dojo needs JavaScript turned on in this browser.</p></noscript>
+  </main>
+  <div id="live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="leave-dialog" class="leave-dialog" aria-labelledby="leave-title">
+    <h2 id="leave-title">End this lesson?</h2>
+    <p>Your answers so far are saved, but the lesson won't count as passed.</p>
+    <div class="actions">
+      <button type="button" class="btn" data-leave="stay" autofocus>Keep going</button>
+      <button type="button" class="btn primary" data-leave="end">End lesson</button>
+    </div>
+  </dialog>
+  <script>
+    // If the app's code can't be fetched (the server was briefly unreachable while this page loaded),
+    // try again by itself, a few times, rather than leaving the loading note up. Only a real load error
+    // triggers this (a slow but healthy load is left alone). The count lives in window.name, which
+    // survives reloads even when site storage is blocked.
+    function kdBootFailed() {
+      var m = /^kd-boot-(\d+)$/.exec(window.name || ''); var n = m ? Number(m[1]) : 0;
+      if (n >= 5) return;
+      window.name = 'kd-boot-' + (n + 1);
+      setTimeout(function () { location.reload(); }, 1000 * (n + 1));
+    }
+  </script>
+  <script type="module" src="js/app.js" onerror="kdBootFailed()"></script>
+</body>
+</html>
