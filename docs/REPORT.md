@@ -67,7 +67,7 @@ in this build, not only read in code; anything not verified says so. The reposit
 | Item | Status | Evidence |
 |---|---|---|
 | Clean at laptop and phone widths, in light and dark mode, and usable by keyboard only | ✅ | Finish review **ship** over 20 captures (1280×800, 1280×720, 375×812, light and dark). The keyboard and screen-reader persona did everything by keyboard: no traps, visible focus everywhere except the study screen (see below) |
-| A stranger can launch and understand it from the README in under two minutes | ⚠️ not tested | The README opens with a 3-step "Start it (30 seconds)", but nobody new has tried it |
+| A stranger can launch and understand it from the README in under two minutes | ⚠️ not tested | The README opens with "Install (Windows)": a link to the latest installer and three steps (since 1.1.0). Nobody new has tried it yet |
 
 **§11 (things not to do)**
 

@@ -4,7 +4,36 @@ Kana Dojo takes a complete beginner from zero to reliable recognition of hiragan
 consonant row at a time. It tracks every weakness and turns your progress into statistics and heat maps.
 It runs entirely on your own computer: no accounts, no internet needed after setup.
 
-## Start it (30 seconds)
+## Install (Windows)
+
+**[Download the latest installer](https://github.com/jeremysaqr/kana-dojo/releases/latest)**: on that
+page, under **Assets**, click **`Kana-Dojo-Setup-<version>.exe`**.
+
+1. Run the downloaded file. The installer isn't code-signed yet, so Windows may say **"Windows protected
+   your PC"**. Click **More info → Run anyway**.
+2. Choose where to install it (the default is fine). It adds Kana Dojo to the desktop and the Start menu.
+3. Open **Kana Dojo**, type your name at **"Who's practising?"**, and start with the vowels.
+
+Good to know:
+
+- **Nothing else to install.** You don't need Node.js or anything from this repository beyond that one file.
+- **It updates itself.** Each time it starts, it checks for a newer version, downloads it in the background
+  and offers to restart.
+- **Your progress stays on this computer**, for your Windows account, in `%APPDATA%\Kana Dojo\data`.
+  Uninstalling keeps it, so a reinstall picks up where you left off. There is no sync between computers.
+- Windows 10 or 11, 64-bit. There is no Mac or Linux build yet.
+
+## Learners (profiles)
+
+Everyone who practises on this computer can have their own profile: progress, stats, settings and words.
+Kana Dojo asks **"Who's practising?"** when there's more than one learner. Switch at any time with the name
+button in the top bar, where you can also add, rename or remove learners. There are no passwords: anyone at
+the computer can open any profile. Removing a learner moves their progress to `data/deleted-profiles/`,
+never erasing it.
+
+## Run from source (for development)
+
+This is the quickest way to change and test Kana Dojo: it runs in your browser from this folder.
 
 1. Install **Node.js 18 or newer** if you don't have it: <https://nodejs.org> (the LTS button).
 2. Double-click **`Launch Kana Dojo.bat`**. Your browser opens at `http://127.0.0.1:4173/`.
@@ -18,33 +47,25 @@ use that launcher.
 If something goes wrong the launcher tells you why: Node missing or too old, or the port busy (it
 reuses a running Kana Dojo or moves to the next free port).
 
-## Learners (profiles)
+From source, progress lives in this folder's `data/`, separate from the installed app's. To carry progress
+over, close both and copy `data\profiles\` and `data\profiles.json` into `%APPDATA%\Kana Dojo\data`.
 
-Everyone who practises on this computer can have their own profile: progress, stats, settings and words.
-Kana Dojo asks **"Who's practising?"** when there's more than one learner. Switch at any time with the name
-button in the top bar, where you can also add, rename or remove learners. There are no passwords: anyone at
-the computer can open any profile. Removing a learner moves their progress to `data/deleted-profiles/`,
-never erasing it.
+### Building and releasing the desktop app
 
-## Desktop app (installer)
-
-Kana Dojo also runs as a normal Windows app in its own window, with an installer and automatic updates.
-The code is the same as the browser version: keep using the browser for quick changes, and build the app
-now and then.
+The desktop app is the same code in its own window (Electron). Run `npm install` once to get the build
+tools.
 
 | What | Command |
 |---|---|
 | Run the desktop app from source | `npm run app` |
-| Build the installer (`dist\Kana Dojo Setup <version>.exe`) | `npm run dist` |
-| Build and publish a GitHub Release (installed copies update from it) | `npm run release` (see `tools/release.mjs` for the token it needs) |
+| Build the installer locally (`dist\Kana Dojo Setup <version>.exe`) | `npm run dist` |
+| Build and publish a GitHub Release (installed copies update from it) | `npm run release` |
 
-- The first time, run `npm install` to get the build tools (Electron, electron-builder).
-- The installed app keeps its data in **`%APPDATA%\Kana Dojo\data`**, separate from this folder's `data/`.
-  To carry progress over, close both and copy `data\profiles\` and `data\profiles.json` across.
-- **Updates:** raise `"version"` in `package.json`, then `npm run release`. The app checks GitHub on start,
-  downloads a newer version in the background, and offers to restart.
-- The installer isn't code-signed, so the first time Windows SmartScreen says "Windows protected your PC";
-  choose **More info → Run anyway**.
+To publish a new version:
+
+1. Raise `"version"` in `package.json`; installed copies only update to a higher version.
+2. Run `npm run release` with a GitHub token in `GH_TOKEN`. With GitHub CLI signed in:
+   `GH_TOKEN="$(gh auth token)" npm run release` (Git Bash). `tools/release.mjs` explains the other options.
 
 ## How it works
 
