@@ -5,9 +5,11 @@
 > - **Desktop app:** Electron (`electron/main.js`; `npm run app`, `npm run dist`, `npm run release`) with NSIS installer and electron-updater from GitHub Releases. The installed app's data is in `%APPDATA%\Kana Dojo\data`.
 > - **Repo:** public at https://github.com/jeremysaqr/kana-dojo.
 >
-> **Not done yet:**
-> - no GitHub Release published, so installed copies have nothing to update to (`npm run release`, with `GH_TOKEN` from `gh auth token`);
-> - the installer is unsigned (SmartScreen warns once). (dog-eared 2026-10-20, updated after steps 1–2)
+> **Released:** v1.1.0 is published (https://github.com/jeremysaqr/kana-dojo/releases/tag/v1.1.0) with the installer, its blockmap and `latest.yml`.
+>
+> **Next release:** raise `"version"`, then run `GH_TOKEN=$(gh auth token) npm run release`.
+>
+> **Not done yet:** the installer is unsigned (SmartScreen warns once). (dog-eared 2026-10-20, updated after steps 1–2)
 
 Read `kana-trainer-master-prompt.md` (in `..\award video\`), `PRODUCT.md`, `.impeccable/surfaces/public-index-html.md`
 (direction contract), and the latest critique in `.impeccable/critique/` before starting.
